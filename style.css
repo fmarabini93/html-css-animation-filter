@@ -228,3 +228,39 @@
         left: 10%;
     }
 }
+
+.ex-13-button:hover > .ex-13-bottom-white {
+    animation: bottom-traslation 2s linear;
+}
+@keyframes bottom-traslation {
+    0% {
+        position: absolute;
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        position: absolute;
+        bottom: -10px;
+        right: calc(100% - 40px);
+    }
+    45% {
+        position: absolute;
+        bottom: 100%;
+        right: calc(100% - 40px);
+    }
+    75% {
+        position: absolute;
+        bottom: 100%;
+        right: -20px;
+    }
+    90% {
+        position: absolute;
+        bottom: -10px;
+        right: -20px;
+    }
+    100% {
+        position: absolute;
+        bottom: -10px;
+        right: 20%;
+    }
+}
