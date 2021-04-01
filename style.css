@@ -191,3 +191,40 @@
         transform: translateX(0%);
     } 
 }
+
+/* Es. 13 */
+.ex-13-button:hover > .ex-13-top-white {
+    animation: top-traslation 2s linear;
+}
+@keyframes top-traslation {
+    0% {
+        position: absolute;
+        top: -10px;
+        left: 10%;
+    }
+    30% {
+        position: absolute;
+        top: -10px;
+        left: calc(100% - 30px);
+    }
+    45% {
+        position: absolute;
+        top: 100%;
+        left: calc(100% - 30px);
+    }
+    75% {
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    90% {
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }
+    100% {
+        position: absolute;
+        top: -10px;
+        left: 10%;
+    }
+}
