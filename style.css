@@ -160,3 +160,34 @@
         transform: rotate(0deg);
     }
 }
+
+/* Es. 12 */
+.ex-12-button:hover > .ex-12-top-white {
+    animation: top-trasl 2s linear;
+}
+@keyframes top-trasl {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(180%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.ex-12-button:hover > .ex-12-bottom-white {
+    animation: btm-trasl 2s linear;
+}
+@keyframes btm-trasl {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0%);
+    } 
+}
